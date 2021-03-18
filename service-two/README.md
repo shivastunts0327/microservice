@@ -24,13 +24,13 @@ Refer: https://github.com/vmudigal/microservices-sample to bring up the micro se
 
 ##### Swagger UI
 
-http://localhost:8084/swagger-ui.html
+http://54.144.19.170:8084/swagger-ui.html
 
 ![alt tag](https://github.com/vmudigal/microservices-sample/blob/version-5/service-two/doc/tools/swagger.png?raw=true)   
 
 ##### H2 Console
 
-Access the h2 database through web client: http://localhost:8084/h2
+Access the h2 database through web client: http://54.144.19.170:8084/h2
 
 ![alt tag](https://github.com/vmudigal/microservices-sample/blob/version-5/service-two/doc/tools/h2-login.png?raw=true)   
 

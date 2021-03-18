@@ -57,7 +57,7 @@ Below is the architectural diagram for microservices sample project.
 ### Components Integrated & Tools Usage   
 ##### API Gateway
    
-Netflix Zuul is a the reverse proxy server which acts as the API Gateway for accessing the micro services behind the gateway which routes the request to the respective service. Microservice’s stay behind reverse proxy server and needs to be consumed via api gateway. The api-gateway micro service with docker profile runs on port 8080 and can be accessed by http://localhost:8080 .   
+Netflix Zuul is a the reverse proxy server which acts as the API Gateway for accessing the micro services behind the gateway which routes the request to the respective service. Microservice’s stay behind reverse proxy server and needs to be consumed via api gateway. The api-gateway micro service with docker profile runs on port 8080 and can be accessed by http://54.144.19.170:8080 .   
 
 Configuration done in API Gateway for Routing:   
 ```
@@ -93,7 +93,7 @@ spring:
         healthCheckPath: ${management.contextPath}/health
         healthCheckInterval: 15s
 ```
-Consul management console can be accessed at http://localhost:8500/ui/ 
+Consul management console can be accessed at http://54.144.19.170:8500/ui/ 
 
 ![alt tag](https://github.com/vmudigal/microservices-sample/blob/version-5/documents/screens/Consul/consul.png?raw=true)
  
@@ -101,7 +101,7 @@ Consul management console can be accessed at http://localhost:8500/ui/
 
 Monitoring, visualisation & management of the container in docker is done by weave scope.   
 
-Weavescope management console can be accessed at http://localhost:4040/   
+Weavescope management console can be accessed at http://54.144.19.170:4040/   
 
 ![alt tag](https://github.com/vmudigal/microservices-sample/blob/version-5/documents/screens/Weavescope/weavescope.png?raw=true)
 
@@ -111,9 +111,9 @@ Logback integrated with every microservices creates application logs and send th
 
 Accessing tools:   
 
-Elasticsearch: http://localhost:9200/_search?pretty   
+Elasticsearch: http://54.144.19.170:9200/_search?pretty   
 
-Kibana: http://localhost:5601/app/kibana
+Kibana: http://54.144.19.170:5601/app/kibana
 
 ![alt tag](https://github.com/vmudigal/microservices-sample/blob/version-5/documents/screens/Kibana/kibana.png?raw=true)
 
@@ -121,7 +121,7 @@ Kibana: http://localhost:5601/app/kibana
 
 Intercommunication between microservices happens asynchronously with the help of RabbitMQ.
 
-RabbitMQ console can be accessed at http://localhost:15672/
+RabbitMQ console can be accessed at http://54.144.19.170:15672/
 
 ![alt tag](https://github.com/vmudigal/microservices-sample/blob/version-5/documents/screens/RabbitMQ/3.rabbit-queues.png?raw=true)
 
@@ -158,7 +158,7 @@ Below are the steps to bring up the development environment and get started.
 3) Clone the fork using https://github.com/{YOUR_GIT_ID}/microservices-sample.git</br>
 4) Execute "cd /microservices-sample/build/docker/scripts/"</br>
 5) To deploy docker please run "./deploy.sh docker".</br>
-6) Access the Application at http://localhost/</br></br>
+6) Access the Application at http://54.144.19.170/</br></br>
 
 ### Extras
 

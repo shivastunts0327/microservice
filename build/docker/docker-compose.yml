@@ -213,7 +213,7 @@ services:
     expose:
       - "5601"
     environment:
-      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - ELASTICSEARCH_URL=http://54.144.19.170
     links:
       - elasticsearch
     networks:
@@ -229,7 +229,7 @@ services:
     environment:
       - "cluster.name=elasticsearch"
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      - "discovery.zen.ping.unicast.hosts=127.0.0.1"
+      - "discovery.zen.ping.unicast.hosts=54.144.19.170"
       - "discovery.type=single-node"
     ulimits:
       memlock:
@@ -260,7 +260,7 @@ services:
     volumes:
       - /Users/Shared/data/tools/logstash/:/tmp/
     command: >
-      logstash --debug -e 'input { tcp { port => 5000 codec => json { charset => "UTF-8" } } } output { elasticsearch { hosts => "elasticsearch:9200" } }'
+      logstash --debug -e 'input { tcp { port => 5000 codec => json { charset => "UTF-8" } } } output { elasticsearch { hosts => "54.144.19.170" } }'
     depends_on:
       - elasticsearch
     networks:

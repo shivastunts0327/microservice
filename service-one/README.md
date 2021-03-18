@@ -44,7 +44,7 @@ Microservices sample project uses a number of open source projects to work prope
 
 ##### Swagger UI
 
-http://localhost:8082/swagger-ui.html
+http://54.144.19.170:8082/swagger-ui.html
 
 ![alt tag](https://github.com/vmudigal/microservices-sample/blob/version-5/service-one/doc/tools/swagger.png?raw=true)   
 
