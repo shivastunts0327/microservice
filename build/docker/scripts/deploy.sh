@@ -1,11 +1,11 @@
-if [ $# == 0 ] 
+if [ $# == 0 ]
 then
-	echo "Usage:
-    
+        echo "Usage:
+
 Input Parameters :
 
-	1) Profile name for e.x 'docker'"
-	exit 1
+        1) Profile name for e.x 'docker'"
+        exit 1
 fi
 
 
@@ -16,7 +16,7 @@ mvn clean package
 
 # Enter docker-compose folder
 
-cd build/docker/
+cd /opt/microservice/build/docker/
 
 # Get the profile from
 # command line arguement
